@@ -1,12 +1,4 @@
-/*
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
-  })
-})
-*/
 describe("Quiz Component", () => {
-  
   it("should start the quiz and display the first question", () => {});
 
   it("should answer questions and complete the quiz", () => {});
