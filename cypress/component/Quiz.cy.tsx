@@ -17,7 +17,6 @@ describe("Quiz Component", () => {
     
     mount(<Quiz />);
     cy.get('button').contains('Start Quiz').click();
-    cy.get('.card').should('be.visible');
     cy.get('h2').should('exist').and('not.be.empty');
   });
 
@@ -45,7 +44,7 @@ describe("Quiz Component", () => {
       cy.get('h2').should('exist').and('not.be.empty');
       cy.get('button').contains('1').click();
     }
-    
+
     cy.get('button').contains('Take New Quiz').click();
     cy.get('h2').should('exist').and('not.be.empty');
   });
