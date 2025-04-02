@@ -109,7 +109,7 @@ This project uses Cypress for testing. Both component and end-to-end tests are i
 
 ## **Walkthrough**
 
-[Walkthrough link](#)
+[Walkthrough link](https://drive.google.com/file/d/1zPAqlP_YxwVDZ-OeE2zoFSDKdEmPGOI6/view?usp=sharing)
 
 ## **License**
 
