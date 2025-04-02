@@ -7,5 +7,25 @@
       { "text": "Not Quite", "isCorrect": false },
       { "text": "Not Close", "isCorrect": false }
     ]
+  },
+
+  {
+    "question": "Which is the correct answer?",
+    "answers":[
+      {"text":"Almost", "isCorrect":false},
+      {"text":"Not Quite", "isCorrect":false},
+      {"text":"Correct", "isCorrect":true},
+      {"text":"Not Close", "isCorrect":false}
+    ]
+  },
+
+  {
+    "question": "Which is the correct answer?",
+    "answers":[
+      {"text":"Not Quite", "isCorrect":false},
+      {"text":"Almost", "isCorrect":false},
+      {"text":"Not Close", "isCorrect":false},
+      {"text":"Correct", "isCorrect":true}
+    ]
   }
 ]
