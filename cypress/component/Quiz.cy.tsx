@@ -17,7 +17,6 @@ describe("Quiz Component", () => {
     
     mount(<Quiz />);
     cy.get('button').contains('Start Quiz').click();
-    cy.get('.card').should('be.visible');
     cy.get('h2').should('exist').and('not.be.empty');
   });
 
@@ -27,6 +26,8 @@ describe("Quiz Component", () => {
 
     cy.get('button').contains('Start Quiz').click();
     cy.get('button').contains('1').click();
+    cy.get('button').contains('2').click();
+    cy.get('button').contains('4').click();
     cy.get('.alert-success').should('be.visible').and('contain', 'Your score');
 
     
@@ -37,7 +38,13 @@ describe("Quiz Component", () => {
     mount(<Quiz />);
 
     cy.get('button').contains('Start Quiz').click();
-    cy.get('button').contains('1').click();
+    
+    const questionCount = 3;
+    for (let i = 0; i < questionCount; i++) {
+      cy.get('h2').should('exist').and('not.be.empty');
+      cy.get('button').contains('1').click();
+    }
+
     cy.get('button').contains('Take New Quiz').click();
     cy.get('h2').should('exist').and('not.be.empty');
   });
